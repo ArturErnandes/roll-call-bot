@@ -6,7 +6,7 @@ from logger import get_logger
 
 logger = get_logger(__name__)
 
-data_file = "stat-data.json"
+data_file = "data.json"
 
 with open(data_file, "r", encoding="utf-8") as f:
     config_data = json.load(f)

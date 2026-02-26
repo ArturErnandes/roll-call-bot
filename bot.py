@@ -221,7 +221,7 @@ async def roll_call_mark_handler(callback: CallbackQuery):
     else:
         roll.absent.add(user_id)
 
-    await callback.answer("Отмечено ✅")
+    await callback.answer("Ты отмечен ✅")
 
     if not roll.report_sent:
         text = render_roll_call_text(roll)

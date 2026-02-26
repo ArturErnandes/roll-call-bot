@@ -14,7 +14,7 @@ new_session = async_sessionmaker(engine, expire_on_commit=False)
 
 
 async def get_users_list_db():
-    query = text("SELECT * FROM users")
+    query = text("SELECT * FROM users ORDER BY name")
 
     async with new_session() as session:
         try:

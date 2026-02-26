@@ -14,8 +14,3 @@ class DbConfig:
 class User:
     id: int
     name: str
-
-
-@dataclass(frozen=True)
-class UsersConfig:
-    users: list[User]
